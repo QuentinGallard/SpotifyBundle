@@ -1,0 +1,12 @@
+services:
+    spotify.session:
+        class: SpotifyWebAPI\Session
+        arguments: ['%spotify.client_id%', '%spotify.client_secret%', '%spotify.redirect_uri%']
+
+    spotify.factory:
+        class: Nomad145\SpotifyBundle\Factory\SpotifyApiFactory
+        arguments: ['@spotify.session', '%spotify.scopes%']
+
+    spotify.api:
+        class: SpotifyWebAPI\SpotifyWebAPI
+        factory: ['@spotify.factory', 'createSpotifyApi']
