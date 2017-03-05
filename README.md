@@ -5,7 +5,7 @@ A Symfony bundle that wraps jwilsson/spotify-web-api-php.
 
 # Installation
 ```
-composer require Nomad145/SpotifyBundle
+composer require nomad145/spotify-bundle
 ```
 
 # Configuration
