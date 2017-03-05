@@ -4,7 +4,7 @@ namespace Nomad145\SpotifyBundle\Factory;
 
 /**
  * Class SpotifyApiFactory
- * @author Michael Phillips <michael.phillips@manpow.com>
+ * @author Michael Phillips <michaeljoelphillips@gmail.com>
  */
 class SpotifyApiFactory
 {
